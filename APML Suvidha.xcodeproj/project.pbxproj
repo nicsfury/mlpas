@@ -116,6 +116,10 @@
 		9098CF2220621BF4006DB531 /* DestinationWantToMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098CF2120621BF4006DB531 /* DestinationWantToMove.swift */; };
 		9098CF242062259A006DB531 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098CF232062259A006DB531 /* UIViewController.swift */; };
 		9098CF26206258B1006DB531 /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098CF25206258B1006DB531 /* UIDatePicker.swift */; };
+		9098F334206B85EC00813E39 /* ViewArticleFinalReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098F333206B85EC00813E39 /* ViewArticleFinalReview.swift */; };
+		9098F336206BAD5900813E39 /* FinalReviewComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098F335206BAD5900813E39 /* FinalReviewComplete.swift */; };
+		9098F338206BAED500813E39 /* FinalReviewFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098F337206BAED500813E39 /* FinalReviewFirstCell.swift */; };
+		9098F33A206BAEE500813E39 /* FinalReviewSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098F339206BAEE500813E39 /* FinalReviewSecondCell.swift */; };
 		90A41CE7206A336200861907 /* ViewArticleListComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A41CE6206A336200861907 /* ViewArticleListComplete.swift */; };
 		90A41CE9206A33A500861907 /* ViewArticleListCompleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A41CE8206A33A500861907 /* ViewArticleListCompleteTableViewCell.swift */; };
 		90A41CEB206A517000861907 /* ViewArticleFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A41CEA206A517000861907 /* ViewArticleFirstCell.swift */; };
@@ -296,6 +300,10 @@
 		9098CF2120621BF4006DB531 /* DestinationWantToMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationWantToMove.swift; sourceTree = "<group>"; };
 		9098CF232062259A006DB531 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9098CF25206258B1006DB531 /* UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = "<group>"; };
+		9098F333206B85EC00813E39 /* ViewArticleFinalReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArticleFinalReview.swift; sourceTree = "<group>"; };
+		9098F335206BAD5900813E39 /* FinalReviewComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalReviewComplete.swift; sourceTree = "<group>"; };
+		9098F337206BAED500813E39 /* FinalReviewFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalReviewFirstCell.swift; sourceTree = "<group>"; };
+		9098F339206BAEE500813E39 /* FinalReviewSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalReviewSecondCell.swift; sourceTree = "<group>"; };
 		90A41CE6206A336200861907 /* ViewArticleListComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArticleListComplete.swift; sourceTree = "<group>"; };
 		90A41CE8206A33A500861907 /* ViewArticleListCompleteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArticleListCompleteTableViewCell.swift; sourceTree = "<group>"; };
 		90A41CEA206A517000861907 /* ViewArticleFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArticleFirstCell.swift; sourceTree = "<group>"; };
@@ -484,6 +492,7 @@
 				905DA0712044296900C7035A /* LocationModel.swift */,
 				904949932068B60300A0AAD3 /* ArticleListModel.swift */,
 				904949952068F59600A0AAD3 /* CategoryListModel.swift */,
+				9098F333206B85EC00813E39 /* ViewArticleFinalReview.swift */,
 			);
 			path = "Model Class";
 			sourceTree = "<group>";
@@ -608,6 +617,7 @@
 				9065E512204FA92900F52AAF /* ArticleDetailsComplete.swift */,
 				90162A422064CDCA008CBF01 /* SurveyTimeComplete.swift */,
 				90A41CE6206A336200861907 /* ViewArticleListComplete.swift */,
+				9098F335206BAD5900813E39 /* FinalReviewComplete.swift */,
 			);
 			path = CompleteHouseHoldModule;
 			sourceTree = "<group>";
@@ -929,6 +939,8 @@
 				9065E514204FA99000F52AAF /* ArticleDetailsTableViewCellComplete.swift */,
 				90A41CE8206A33A500861907 /* ViewArticleListCompleteTableViewCell.swift */,
 				90A41CEA206A517000861907 /* ViewArticleFirstCell.swift */,
+				9098F337206BAED500813E39 /* FinalReviewFirstCell.swift */,
+				9098F339206BAEE500813E39 /* FinalReviewSecondCell.swift */,
 			);
 			path = CompleteHouseHoldCustomCell;
 			sourceTree = "<group>";
@@ -1241,6 +1253,7 @@
 				90D10D8B204D3680005CE993 /* SubmitStepCarAndBike.swift in Sources */,
 				905DA06D2044091B00C7035A /* Validate.swift in Sources */,
 				9074C375205BC88900D8BE9C /* Profile.swift in Sources */,
+				9098F33A206BAEE500813E39 /* FinalReviewSecondCell.swift in Sources */,
 				90162A3F20639074008CBF01 /* String.swift in Sources */,
 				90D10D6D204D21F3005CE993 /* AddressFieldOffice.swift in Sources */,
 				906730AF205105230062EB2B /* ArticleDetailsOffice.swift in Sources */,
@@ -1254,8 +1267,10 @@
 				905BC67A2060C33800C1BAF6 /* AllOrderListModel.swift in Sources */,
 				9098CF242062259A006DB531 /* UIViewController.swift in Sources */,
 				9074C37D205BDB6F00D8BE9C /* FaqMain.swift in Sources */,
+				9098F338206BAED500813E39 /* FinalReviewFirstCell.swift in Sources */,
 				90D10D7C204D340C005CE993 /* DestinationAddressFewItem.swift in Sources */,
 				9074C391205CDFE400D8BE9C /* OrderDetailsCustomCell.swift in Sources */,
+				9098F336206BAD5900813E39 /* FinalReviewComplete.swift in Sources */,
 				9064A34E203BDBD000E8F191 /* RAMBadge.swift in Sources */,
 				90D10D7E204D3447005CE993 /* PickUpDateFewItem.swift in Sources */,
 				90D10D80204D349A005CE993 /* SubmitStepFewItem.swift in Sources */,
@@ -1269,6 +1284,7 @@
 				900DE2D2205D30DB00429CF7 /* QuotationDetails.swift in Sources */,
 				90A41CE9206A33A500861907 /* ViewArticleListCompleteTableViewCell.swift in Sources */,
 				9064A343203A8F2000E8F191 /* login.swift in Sources */,
+				9098F334206B85EC00813E39 /* ViewArticleFinalReview.swift in Sources */,
 				906272142046CEA20016768E /* AppStoryboards.swift in Sources */,
 				9080992C2057E22E00753669 /* UIColor.swift in Sources */,
 				9074C39B205D1A7000D8BE9C /* ExternalSurveyDetails.swift in Sources */,

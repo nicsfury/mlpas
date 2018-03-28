@@ -19,6 +19,67 @@ class WebServices: NSObject {
     private override init() {
         
     }
+    //MARK: API - Delete Article FinalReview App
+    
+    func deleteItemFinalReview(methodName: String ,uniqid: String,itemId: String, completion: @escaping (_ success:[String: Any]? ,_ error:Error?) -> Void) {
+        SVProgressHUD.show(withStatus: "Loading...")
+        SVProgressHUD.setDefaultMaskType(.clear)
+        
+        let paramsitem = String(format:"{\"method\":\"%@\",\"uniqid\":\"%@\",\"id\":\"%@\"}",methodName,uniqid,itemId)
+        let parameters:[String: String] = ["json_data": paramsitem]
+        let url = URL(string: AppConstants.kBASE_SERVICE_URL)
+        
+        Alamofire.request(url!, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: {response in
+            switch(response.result){
+            case .success(_):
+                if let data = response.result.value as? [String: Any]{
+                    completion(data, nil)
+                    SVProgressHUD.dismiss()
+                }
+                else{
+                    completion(nil, nil)
+                    SVProgressHUD.dismiss()
+                }
+                break
+            case .failure(_):
+                let err = response.result.error
+                completion(nil, err)
+                SVProgressHUD.dismiss()
+                break
+            }
+        })
+    }
+    //MARK: API - Final Review App
+    
+    func getFinalReview(methodName: String ,uniqid: String, completion: @escaping (_ success:[String: Any]? ,_ error:Error?) -> Void) {
+        SVProgressHUD.show(withStatus: "Loading...")
+        SVProgressHUD.setDefaultMaskType(.clear)
+        
+        let paramsitem = String(format:"{\"method\":\"%@\",\"uniqid\":\"%@\"}",methodName,uniqid)
+        let parameters:[String: String] = ["json_data": paramsitem]
+        let url = URL(string: AppConstants.kBASE_SERVICE_URL)
+        
+        Alamofire.request(url!, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: {response in
+            switch(response.result){
+            case .success(_):
+                if let data = response.result.value as? [String: Any]{
+                    completion(data, nil)
+                    SVProgressHUD.dismiss()
+                }
+                else{
+                    completion(nil, nil)
+                    SVProgressHUD.dismiss()
+                }
+                break
+            case .failure(_):
+                let err = response.result.error
+                completion(nil, err)
+                SVProgressHUD.dismiss()
+                break
+            }
+        })
+    }
+    
     //MARK: API - Article Details Listing Add Item
     
     func addItemInArticleListing(methodName: String ,uniqid: String,itemName: String,qty: String,priceItem: String,itemId: String,catid: String,addCft: String, completion: @escaping (_ success:[String: Any]? ,_ error:Error?) -> Void) {

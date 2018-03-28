@@ -41,7 +41,8 @@ class ArticleDetailsComplete: UIViewController{
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func viewAllClickedBtn(_ sender: Any) {
-        
+        let ViewArticleListCompleteVC = ViewArticleListComplete.instantiate(fromAppStoryboard: .CompleteHouseHoldMain) as! ViewArticleListComplete
+        self.navigationController?.pushViewController(ViewArticleListCompleteVC, animated: true)
     }
     @IBAction func submitCLcikedBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -226,7 +227,7 @@ extension ArticleDetailsComplete: UISearchBarDelegate{
         self.tableview.reloadData()
     }
 }
-
+//MARK: - UITextFieldDelegate Method
 extension ArticleDetailsComplete: UITextFieldDelegate{
     
    

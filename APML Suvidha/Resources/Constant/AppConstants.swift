@@ -29,6 +29,9 @@ class AppConstants {
     static let METHOD_STEP_ONE = "step1"
     static let METHOD_ARTICLE_LISTING = "articleItemListing"
     static let METHOD_ARTICLE_UPDATE = "steppp3add"
+    static let METHOD_FINAL_REVIEW = "FinalReview"
+    static let METHOD_DELETE_ITEM = "deleteManualItem"
+    
     
     //UserDefault Var
     static let Location_Origin = "origin"

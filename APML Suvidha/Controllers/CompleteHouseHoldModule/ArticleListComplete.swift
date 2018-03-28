@@ -62,6 +62,8 @@ class ArticleListComplete: UIViewController  {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func submitCLcikedBtn(_ sender: Any) {
+        let articledetails = FinalReviewComplete.instantiate(fromAppStoryboard: .CompleteHouseHoldMain)
+        self.navigationController?.pushViewController(articledetails, animated: true)
     }
     @IBAction func viewArticleDetails(_ sender: Any) {
         let articledetails = ArticleDetailsComplete.instantiate(fromAppStoryboard: .CompleteHouseHoldMain)

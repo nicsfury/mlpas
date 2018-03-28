@@ -14,4 +14,8 @@ class ViewArticleFirstCell:UITableViewCell{
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    func setUpLayout(list: ViewArticleFinalReview , cell: ViewArticleFirstCell)  {
+        catIdLbl.text = list.catName
+    }
 }
