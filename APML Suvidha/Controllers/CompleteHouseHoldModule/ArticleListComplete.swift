@@ -12,6 +12,8 @@ class ArticleListComplete: UIViewController  {
     
     //MARK: - Properties
     @IBOutlet weak var enquiryNumberLbl: UILabel!
+    @IBOutlet weak var totalArticleLbl: UILabel!
+    @IBOutlet weak var totalCftLbl: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     var ListModel = [ArticleListModel]()
     //MARK: - UIViewController Method
@@ -34,6 +36,11 @@ class ArticleListComplete: UIViewController  {
                 let statusString = "\(status)"
                 switch(statusString){
                 case AppConstants.SUCCESS:
+                    self.ListModel.removeAll()
+                    let TotalArticle: String = response!["totalitem"] as! String
+                    let TotalCft: String = response!["cftcount"] as! String
+                    self.totalArticleLbl.text = TotalArticle
+                    self.totalCftLbl.text = TotalCft
                     let listArray: [[String: Any]] = response!["data"] as! [[String: Any]]
                     for list in listArray{
                         self.ListModel.append(ArticleListModel(articleId: list["id"] as! String, articleImg: list["image"] as! String, articleName: list["name"] as! String, articleCount: list["count"] as! String, articleCft: list["cftcount"] as! String))

@@ -40,15 +40,20 @@ class ArticleDetailsTableViewCellComplete: UITableViewCell{
     func setUpLayout(cell: ArticleDetailsTableViewCellComplete, list: CategoryListModel){
         
         cell.articleNameLbl.text =  list.name
-        cell.greenBtn.isHidden = true
-        cell.belowLbl.isHidden = true
-        cell.enterAmountTxtField.isHidden = true
         cell.articleLenghtLbl.text = "L: " + list.lenght
         cell.articleWidthLbl.text =  "W: " + list.width
         cell.articleHieghtLbl.text = "H: " + list.height
         cell.increaseValueLbl.text = list.quantity
-        
-        
+        if list.quantity == "0"{
+            cell.greenBtn.isHidden = true
+            cell.belowLbl.isHidden = true
+            cell.enterAmountTxtField.isHidden = true
+        }else{
+            cell.greenBtn.isHidden = false
+            cell.belowLbl.isHidden = false
+            cell.enterAmountTxtField.isHidden = false
+        }
+        cell.enterAmountTxtField.text = list.value
         let urlString = list.catImage.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
         let url = URL(string: urlString!)
         let placeholderImage = UIImage(named: "Icon")!

@@ -18,8 +18,6 @@ class MyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var articleImg: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
     }
     
     func setUpLayOut(listModel: ArticleListModel, cell: MyCollectionViewCell)  {
@@ -30,6 +28,9 @@ class MyCollectionViewCell: UICollectionViewCell {
 
         if listModel.articleCount == AppConstants.ZeroStr {
             cell.countBtn.isHidden = true
+        }else{
+            cell.countBtn.isHidden = false
+            cell.countBtn.setTitle(listModel.articleCount, for: UIControlState.normal)
         }
         let url = URL(string: urlString!)
         let placeholderImage = UIImage(named: "Icon")!

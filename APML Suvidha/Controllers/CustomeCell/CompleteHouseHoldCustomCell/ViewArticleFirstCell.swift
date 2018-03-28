@@ -10,4 +10,8 @@ import Foundation
 import UIKit
 class ViewArticleFirstCell:UITableViewCell{
     
+    @IBOutlet weak var catIdLbl: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

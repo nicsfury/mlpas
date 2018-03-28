@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 class ViewArticleListComplete: UIViewController{
     
+    @IBOutlet weak var tableview: UITableView!
+    @IBAction func backClickedBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension ViewArticleListComplete: UITableViewDelegate{

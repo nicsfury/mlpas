@@ -10,5 +10,12 @@ import Foundation
 import UIKit
 
 class ViewArticleListCompleteTableViewCell:UITableViewCell{
-    
+    @IBOutlet weak var itemNameLbl: UILabel!
+    @IBOutlet weak var enterValueTextField: UITextField!
+    @IBOutlet weak var qantityLbl: UILabel!
+    @IBOutlet weak var plusBtn: UIButton!
+    @IBOutlet weak var minusBtn: UIButton!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }
