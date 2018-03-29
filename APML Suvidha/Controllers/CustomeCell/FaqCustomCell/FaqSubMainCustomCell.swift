@@ -13,3 +13,4 @@ import UIKit
 class FaqSubMainCustomCell: UITableViewCell{
     
 }
+

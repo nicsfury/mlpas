@@ -69,4 +69,10 @@ class AppConstants {
     static let ZeroStr = "0"
     static let OneStr = "1"
   
+    
+    
+    
+  static  let menuItem = ["Order History","Profile","Transaction History","Track Shipment","Customer Support","Refer and Earn","FAQs","Offer and Discount","Feedback","About Us","Services","T&C"]
+    
+  static  let menusubItem = ["View your full order history","Go to your Profile","See full transaction history","Check the current status","Get instant help","Join our referral program","Faq's","Get latest offers and discount","Submit your feedback","Know who we are","Find what all we offer","Term & Condition"]
 }

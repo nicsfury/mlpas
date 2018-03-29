@@ -20,14 +20,11 @@ class HomeViewController: UIViewController {
         let OriginName = AppUserDefaults.value(forKey: .Location_Origin, fallBackValue: "").string
         let DestinationName = AppUserDefaults.value(forKey: .Location_Destination, fallBackValue: "").string
         let EnquiryNumber = AppUserDefaults.value(forKey: .UNIQUE, fallBackValue: "").string
-        
         statusBar.isHidden = true
-         self.navigationController?.setNavigationBarHidden(false, animated: true)
-
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         originLbl.text = OriginName
         destinationLbl.text = DestinationName
         enquiryNumberLbl.text = EnquiryNumber
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,7 +102,5 @@ class HomeViewController: UIViewController {
             break
         }
     }
-    
-   
 }
 

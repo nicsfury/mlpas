@@ -23,7 +23,6 @@ enum AppUserDefaults {
         case ExpectedMoveDateComplete
         case AreaStatus
         
-        
         //removeable After Use
         
         case AreaOriginLocation
