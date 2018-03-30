@@ -2980,7 +2980,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzF-nz-mlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4592" y="184"/>
+            <point key="canvasLocation" x="4582" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8CQ-IV-Ik4">
@@ -3798,7 +3798,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQh-Ro-Qad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1202.8985507246377" y="867.39130434782612"/>
+            <point key="canvasLocation" x="1202" y="867"/>
         </scene>
         <!--Survey Date Complete-->
         <scene sceneID="Mym-qk-nqU">
