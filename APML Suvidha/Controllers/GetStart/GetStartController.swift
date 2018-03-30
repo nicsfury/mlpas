@@ -40,7 +40,7 @@ class GetStartController: UIViewController,UIScrollViewDelegate,CLLocationManage
     //MARK: IBOutlet Method
     @IBAction func skipClickedBtn(_ sender: Any) {
     
-        let loginVC = LoginSignup.instantiate(fromAppStoryboard: .Main)
+        let loginVC = SubmitEnquiryComplete.instantiate(fromAppStoryboard: .CompleteHouseHoldMain)
         self.navigationController?.pushViewController(loginVC, animated: true)
     }
     @IBAction func nextClickedButton(_ sender: Any) {
