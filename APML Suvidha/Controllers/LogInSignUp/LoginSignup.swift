@@ -226,8 +226,6 @@ class LoginSignup: UIViewController,UIScrollViewDelegate {
         WebServices.shared.getSignUpApi(methodName: AppConstants.METHOD_SIGNUP, deviceToken: deviceTkn, mobileNumber: mobileNo, userName: Name, userEmail: Email, originLocation: Origin, destinationLocstion: Destination, newEnquiry: NewEnwuiry, completion: {(response,error) in
             if error == nil{
                 guard  let status = response![AppConstants.STATUSTXT] as? Int else { return }
-                guard  let message = response![AppConstants.MESSAGETXT] as? String else { return }
-                
                 let statusString = "\(status)"
                 switch (statusString){
                 case AppConstants.SUCCESS:

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ThirdFinalReviewCustomCell: UITableViewCell{
+    @IBOutlet weak var addArticle: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -2276,7 +2276,7 @@
         <!--Final Review Article List-->
         <scene sceneID="RWC-qK-eND">
             <objects>
-                <viewController id="GdQ-Tt-Riy" customClass="FinalReviewArticleList" customModule="APML_Suvidha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalReviewArticleList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GdQ-Tt-Riy" customClass="FinalReviewArticleList" customModule="APML_Suvidha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OxL-Q8-2vP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2296,6 +2296,7 @@
                                         </state>
                                         <connections>
                                             <action selector="backClickedBtn:" destination="FmV-Jf-zR0" eventType="touchUpInside" id="HKB-Db-H3i"/>
+                                            <action selector="backClickedBtn:" destination="GdQ-Tt-Riy" eventType="touchUpInside" id="cZo-AA-6Pu"/>
                                             <action selector="backClickedBtn:" destination="HGH-iH-cln" eventType="touchUpInside" id="ncT-bE-vAk"/>
                                         </connections>
                                     </button>
@@ -2372,7 +2373,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="articleNameLbl" destination="rgE-Bn-Wxe" id="tQ4-Ks-aO1"/>
-                                            <outlet property="catIdLbl" destination="rgE-Bn-Wxe" id="UXp-Cg-8QK"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="second" id="6DE-sK-A7J" customClass="SecondFinalReviewCustomCell" customModule="APML_Suvidha" customModuleProvider="target">
@@ -2495,11 +2495,8 @@
                                             <outlet property="articleNameLbl" destination="Pxj-ho-CMn" id="Dma-9J-oMp"/>
                                             <outlet property="deleteBtn" destination="dBQ-Pp-N5C" id="uIo-o7-HGP"/>
                                             <outlet property="enterPriceTxtField" destination="nLO-iz-4VI" id="S2y-KO-7fa"/>
-                                            <outlet property="enterValueTextField" destination="nLO-iz-4VI" id="CQ3-9f-pOA"/>
-                                            <outlet property="itemNameLbl" destination="Pxj-ho-CMn" id="gFJ-wA-Vaa"/>
                                             <outlet property="minusBtn" destination="4B1-hL-ofl" id="gyo-MO-HHG"/>
                                             <outlet property="plusBtn" destination="KtV-mw-p81" id="5xH-7n-0uz"/>
-                                            <outlet property="qantityLbl" destination="zeH-Bd-U02" id="KBc-vy-RiV"/>
                                             <outlet property="quantityLbl" destination="zeH-Bd-U02" id="5Uf-DT-uTu"/>
                                         </connections>
                                     </tableViewCell>
@@ -2532,11 +2529,14 @@
                                                 <constraint firstItem="Kea-bx-FIu" firstAttribute="top" secondItem="ATh-FJ-mnD" secondAttribute="top" constant="4" id="hoL-iG-MIf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addArticle" destination="9gY-Tm-8G0" id="Rcy-fY-ASg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="FmV-Jf-zR0" id="ofN-eH-e8c"/>
-                                    <outlet property="delegate" destination="FmV-Jf-zR0" id="aaE-eB-1Re"/>
+                                    <outlet property="dataSource" destination="GdQ-Tt-Riy" id="7GA-gX-jHC"/>
+                                    <outlet property="delegate" destination="GdQ-Tt-Riy" id="Rwf-fN-qcf"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -2553,6 +2553,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xeS-NQ-hk0"/>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="zZ0-V7-O3o" id="zOc-TH-p6p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shj-ka-Rcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,15 +1,15 @@
 //
-//  OriginAreaComplete.swift
+//  OriginAreaOffice.swift
 //  APML Suvidha
 //
-//  Created by Nishant Gupta on 22/03/18.
+//  Created by Nishant Gupta on 02/04/18.
 //  Copyright © 2018 Interactive Bees. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class OriginAreaComplete: UIViewController{
+class OriginAreaOffice: UIViewController{
     //MARK: - Properties
     var models = [String]()
     var filteredModels = [String]()
@@ -23,7 +23,7 @@ class OriginAreaComplete: UIViewController{
         let cityOrigin = AppUserDefaults.value(forKey: .Location_Origin, fallBackValue: "").string
         getCityLocation(name: cityOrigin!)
     }
-    //MARK: - UBOutlet Method
+    //MARK: - IBOutlet Method
     @IBAction func backClikedBtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -52,9 +52,11 @@ class OriginAreaComplete: UIViewController{
         })
     }
 }
-//MARK: - UITabBarDelegate 
 
-extension OriginAreaComplete: UITableViewDelegate{
+
+//MARK: - UITableViewDelegate Method
+extension OriginAreaOffice: UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model: String
         if searchActive{
@@ -67,8 +69,9 @@ extension OriginAreaComplete: UITableViewDelegate{
         self.navigationController?.popViewController(animated: true)
     }
 }
-//MARK: - UITableViewDataSource
-extension OriginAreaComplete: UITableViewDataSource{
+
+//MARK: - UITableViewDataSource Method
+extension OriginAreaOffice: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.CellName, for: indexPath)
         
@@ -90,11 +93,9 @@ extension OriginAreaComplete: UITableViewDataSource{
             return models.count
         }
     }
-    
 }
-
-//MARK: - UISearchBarDelegate
-extension OriginAreaComplete:UISearchBarDelegate{
+//MARK: - UISearchBarDelegate Method
+extension OriginAreaOffice: UISearchBarDelegate{
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchActive = true;
     }

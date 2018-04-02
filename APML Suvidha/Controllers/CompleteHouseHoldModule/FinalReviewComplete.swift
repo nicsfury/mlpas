@@ -50,6 +50,15 @@ extension FinalReviewComplete: UITableViewDelegate{
             return 40
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            
+        }else{
+            let finalReviewVC = FinalReviewArticleList.instantiate(fromAppStoryboard: .CompleteHouseHoldMain)
+            self.navigationController?.pushViewController(finalReviewVC, animated: true)
+        }
+    }
 }
 
 //MARK: UITableViewDataSource Method

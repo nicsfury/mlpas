@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:APML Suvidha.xcodeproj">
+      location = "group:/Users/nishantgupta/Desktop/APML Suvidha/APML Suvidha.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

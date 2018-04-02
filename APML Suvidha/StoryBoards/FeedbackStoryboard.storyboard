@@ -288,7 +288,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write your review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc3-hW-7Cn">
-                                                            <rect key="frame" x="15" y="11" width="345" height="12"/>
+                                                            <rect key="frame" x="15" y="11" width="290" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="RUM-Ha-18X"/>
                                                             </constraints>
@@ -297,7 +297,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CAr-NB-BdV">
-                                                            <rect key="frame" x="15" y="31" width="345" height="42"/>
+                                                            <rect key="frame" x="15" y="31" width="290" height="42"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="42" id="DlM-XW-2uw"/>
@@ -325,7 +325,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Would you recommend to others." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJw-nb-kgf">
-                                                            <rect key="frame" x="15" y="11" width="345" height="12"/>
+                                                            <rect key="frame" x="15" y="11" width="290" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="Slw-v4-Mrf"/>
                                                             </constraints>
@@ -394,7 +394,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJR-AS-413">
-                                                            <rect key="frame" x="124.5" y="24" width="126" height="30"/>
+                                                            <rect key="frame" x="97" y="24" width="126" height="30"/>
                                                             <color key="backgroundColor" red="0.92941176469999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="126" id="EqJ-zQ-IYv"/>
@@ -779,7 +779,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFA-Uy-H1C">
-                                                            <rect key="frame" x="0.0" y="18" width="184" height="40"/>
+                                                            <rect key="frame" x="0.0" y="18" width="156.5" height="40"/>
                                                             <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="Xl3-4C-laz"/>
@@ -790,7 +790,7 @@
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HR-Uh-FDR">
-                                                            <rect key="frame" x="191" y="18" width="184" height="40"/>
+                                                            <rect key="frame" x="163.5" y="18" width="156.5" height="40"/>
                                                             <color key="backgroundColor" red="0.92941176469999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                             <state key="normal" title="SUBMIT">
