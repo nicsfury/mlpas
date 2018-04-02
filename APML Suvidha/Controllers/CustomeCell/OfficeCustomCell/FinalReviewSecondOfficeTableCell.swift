@@ -1,16 +1,16 @@
 //
-//  FinalReviewSecondCell.swift
+//  FinalReviewSecondOfficeTableCell.swift
 //  APML Suvidha
 //
-//  Created by Nishant Gupta on 28/03/18.
+//  Created by Nishant Gupta on 02/04/18.
 //  Copyright © 2018 Interactive Bees. All rights reserved.
 //
 
 import Foundation
 import UIKit
-class  FinalReviewSecondCell: UITableViewCell{
+
+class FinalReviewSecondOfficeTableCell: UITableViewCell{
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 }
-

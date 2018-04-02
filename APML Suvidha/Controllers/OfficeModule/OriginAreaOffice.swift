@@ -18,7 +18,6 @@ class OriginAreaOffice: UIViewController{
     @IBOutlet weak var tableview: UITableView!
     //MARK: - UIViewController
     override func viewDidLoad() {
-        
         searcBar.delegate = self
         let cityOrigin = AppUserDefaults.value(forKey: .Location_Origin, fallBackValue: "").string
         getCityLocation(name: cityOrigin!)

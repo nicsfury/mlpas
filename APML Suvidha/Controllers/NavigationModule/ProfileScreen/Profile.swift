@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class Profile: UIViewController{
+    
+    
+    @IBOutlet weak var mobileLbl: UILabel!
+    @IBOutlet weak var nameLbl: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         statusBar.isHidden = true
@@ -32,5 +37,7 @@ extension Profile: UITableViewDataSource{
 }
 
 extension Profile: UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 700
+    }
 }
