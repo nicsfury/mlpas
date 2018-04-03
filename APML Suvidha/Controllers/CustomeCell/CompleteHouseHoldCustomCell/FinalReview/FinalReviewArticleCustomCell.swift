@@ -15,5 +15,6 @@ class FinalReviewArticleCustomCell: UITableViewCell{
     override func awakeFromNib() {
         super.awakeFromNib()
  
+    
     }
 }
